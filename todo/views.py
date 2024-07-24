@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.views import generic
 from django.urls import reverse_lazy
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
@@ -41,7 +40,7 @@ def toggle_complete_task(request: HttpRequest, pk: int) -> HttpResponse:
 
 class TagListView(generic.ListView):
     model = Tag
-    context_object_name = 'tags'
+    context_object_name = "tags"
     success_url = reverse_lazy("todo:tag-list")
     template_name = "todo/tag_list.html"
 
