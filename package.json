@@ -1,0 +1,199 @@
+[
+  {
+    "model": "todo.tag",
+    "pk": 11,
+    "fields": {
+      "name": "Django"
+    }
+  },
+  {
+    "model": "todo.tag",
+    "pk": 12,
+    "fields": {
+      "name": "Python"
+    }
+  },
+  {
+    "model": "todo.tag",
+    "pk": 13,
+    "fields": {
+      "name": "API"
+    }
+  },
+  {
+    "model": "todo.tag",
+    "pk": 14,
+    "fields": {
+      "name": "Database"
+    }
+  },
+  {
+    "model": "todo.tag",
+    "pk": 15,
+    "fields": {
+      "name": "Testing"
+    }
+  },
+  {
+    "model": "todo.tag",
+    "pk": 16,
+    "fields": {
+      "name": "Deployment"
+    }
+  },
+  {
+    "model": "todo.tag",
+    "pk": 17,
+    "fields": {
+      "name": "Frontend"
+    }
+  },
+  {
+    "model": "todo.tag",
+    "pk": 18,
+    "fields": {
+      "name": "Backend"
+    }
+  },
+  {
+    "model": "todo.tag",
+    "pk": 19,
+    "fields": {
+      "name": "Optimization"
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 11,
+    "fields": {
+      "content": "Finish Django project",
+      "date_create": "2024-07-24T12:00:00Z",
+      "deadline": "2024-08-01T17:00:00Z",
+      "status": false,
+      "tags": [
+        11,
+        12
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 12,
+    "fields": {
+      "content": "Write unit tests",
+      "date_create": "2024-07-24T13:00:00Z",
+      "deadline": "2024-07-30T15:00:00Z",
+      "status": false,
+      "tags": [
+        13,
+        14
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 13,
+    "fields": {
+      "content": "Update documentation",
+      "date_create": "2024-07-24T14:00:00Z",
+      "deadline": "2024-08-05T12:00:00Z",
+      "status": false,
+      "tags": [
+        15
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 14,
+    "fields": {
+      "content": "Fix bugs",
+      "date_create": "2024-07-24T15:00:00Z",
+      "deadline": "2024-07-28T09:00:00Z",
+      "status": true,
+      "tags": [
+        16
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 15,
+    "fields": {
+      "content": "Deploy to production",
+      "date_create": "2024-07-24T16:00:00Z",
+      "deadline": "2024-08-10T17:00:00Z",
+      "status": false,
+      "tags": [
+        17
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 16,
+    "fields": {
+      "content": "Refactor code",
+      "date_create": "2024-07-24T17:00:00Z",
+      "deadline": "2024-08-15T12:00:00Z",
+      "status": false,
+      "tags": [
+        18
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 17,
+    "fields": {
+      "content": "Review pull requests",
+      "date_create": "2024-07-24T18:00:00Z",
+      "deadline": "2024-07-29T10:00:00Z",
+      "status": true,
+      "tags": [
+        19
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 18,
+    "fields": {
+      "content": "Research new features",
+      "date_create": "2024-07-24T19:00:00Z",
+      "deadline": "2024-08-20T15:00:00Z",
+      "status": false,
+      "tags": [
+        12
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 19,
+    "fields": {
+      "content": "Optimize queries",
+      "date_create": "2024-07-24T20:00:00Z",
+      "deadline": "2024-08-12T11:00:00Z",
+      "status": false,
+      "tags": [
+        11,
+        12
+      ]
+    }
+  },
+  {
+    "model": "todo.task",
+    "pk": 20,
+    "fields": {
+      "content": "Add logging",
+      "date_create": "2024-07-24T21:00:00Z",
+      "deadline": "2024-08-07T14:00:00Z",
+      "status": false,
+      "tags": [
+        13,
+        14
+      ]
+    }
+  }
+]
