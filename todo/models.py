@@ -12,11 +12,13 @@ class Tag(models.Model):
 
 class Task(models.Model):
     content = models.TextField()
-    date_create = models.DateTimeField()
-    deadline = models.DateField(blank=True, null=True)
-    status = models.BooleanField(default=False)
-    tags = models.ManyToManyField(Tag)
+    date_create = models.DateTimeField(auto_now_add=True)
+    deadline = models.DateTimeField(blank=True, null=True)
+    status = models.BooleanField(default=False, blank=True)
+    tags = models.ManyToManyField(Tag, related_name="tasks")
+
+    class Meta:
+        ordering = ("status", "-date_create")
 
     def __str__(self):
         return self.content
-
