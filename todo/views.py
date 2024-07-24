@@ -10,6 +10,7 @@ from todo.forms import TaskForm
 class TaskListView(generic.ListView):
     model = Task
     template_name = "todo/task_list.html"
+    queryset = Task.objects.prefetch_related("tags")
 
 
 class TaskCreateView(generic.CreateView):
@@ -40,6 +41,8 @@ def toggle_complete_task(request: HttpRequest, pk: int) -> HttpResponse:
 
 class TagListView(generic.ListView):
     model = Tag
+    context_object_name = 'tags'
+    success_url = reverse_lazy("todo:tag-list")
     template_name = "todo/tag_list.html"
 
 
