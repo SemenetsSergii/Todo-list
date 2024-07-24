@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>
+    Tags:
+    <a style="float: right" class="btn btn-primary" href="{% url "todo:tag-create" %}">
+      Add
+    </a>
+  </h1>
+  <table class="table">
+  
+    <tr>
+      <th>Name</th>
+      <th>Update</th>
+      <th>Delete</th>
+    </tr>
+    {% for tag in tags %}
+      <tr>
+        <td>{{ tag.name }}</td>
+          <td>
+            <form action="{% url 'todo:tag-update' pk=tag.id %}" method="get">
+              <button type="submit" class="btn btn-primary">UPDATE</button>
+            </form>
+          </td>
+          <td>
+            <form action="{% url 'todo:tag-delete' pk=tag.id %}" method="post">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-danger">DELETE</button>
+            </form>
+          </td>
+      </tr>
+    {% endfor %}
+  </table>
+  
+{% endblock %}
